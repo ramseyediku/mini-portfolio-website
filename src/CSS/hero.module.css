@@ -1,0 +1,47 @@
+.hero {
+  display: flex;
+  margin-top: 2em;
+  gap: 2em;
+  justify-content: space-between;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .hero__img {
+    border-radius: 10px;
+    width: 40%;
+  }
+}
+
+.hero__links {
+  margin-top: auto;
+  display: flex;
+  gap: 3em;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    gap: 0.5em;
+
+    img {
+      filter: invert(39%) sepia(0%) saturate(1%) hue-rotate(232deg)
+        brightness(101%) contrast(90%);
+    }
+
+    &:hover,
+    &:focus-within {
+      color: var(--clr-accent-2);
+
+      img {
+        filter: invert(20%) sepia(100%) saturate(1979%) hue-rotate(340deg)
+          brightness(94%) contrast(89%);
+      }
+    }
+  }
+}

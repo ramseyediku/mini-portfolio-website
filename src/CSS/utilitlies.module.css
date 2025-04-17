@@ -1,0 +1,40 @@
+/* utiltiy classes */
+.wrapper {
+  --margin: 2rem;
+  width: min(100% - var(--margin), 150rem);
+  margin-inline: auto;
+}
+
+.watermark {
+  font-family: "Questrial", sans-serif;
+  font-size: 16rem;
+  position: absolute;
+  opacity: 0.025;
+  font-weight: 900;
+  user-select: none;
+}
+
+.title {
+  color: var(--clr-dark);
+  font-size: 3rem;
+}
+
+.link {
+  color: var(--clr-accent);
+  &:hover,
+  &:focus-within {
+    color: var(--clr-accent-2);
+  }
+}
+
+.button {
+  color: var(--clr-light);
+  padding: 0.75em 3.5em;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  background-color: var(--clr-accent-2);
+  position: relative;
+  width: fit-content;
+  border: 0;
+  font-weight: 600;
+}

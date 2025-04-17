@@ -1,0 +1,54 @@
+.footer {
+  color: var(--clr-light);
+  background-color: var(--clr-dark);
+  padding-block: 2em;
+  position: relative;
+  overflow: clip;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__title {
+    font-size: 6.75rem;
+    margin: 0;
+  }
+
+  .footer__copy {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+
+  .button {
+    margin-block: 1.5em;
+  }
+
+  .hero__links {
+    margin-block: 0 auto;
+
+    a {
+      color: var(--clr-light);
+
+      img {
+        filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(316deg)
+          brightness(110%) contrast(101%);
+      }
+
+      &:hover,
+      &:focus-within {
+        color: var(--clr-accent-2);
+
+        img {
+          filter: invert(21%) sepia(65%) saturate(3951%) hue-rotate(345deg)
+            brightness(84%) contrast(82%);
+        }
+      }
+    }
+  }
+
+  .watermark--footer {
+    bottom: -35%;
+    right: -2.5%;
+  }
+}
