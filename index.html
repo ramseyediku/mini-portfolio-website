@@ -45,6 +45,7 @@
         </div>
         <img class="hero__img" src="src/IMG/pfp2.jpg" alt="My profile image" />
       </section>
+
       <section id="about" class="about">
         <h2>About</h2>
         <p>
@@ -57,22 +58,78 @@
           <a href="#">Download CV</a>
         </p>
       </section>
+
       <section id="work" class="work">
-        <h2>Projects</h2>
-        <p>projects</p>
-        <section class="projects">
-          <div>
-            <img src="#" alt="#about" />
-            <p></p>
-            <a href=""></a><img src="" alt="" />
-          </div>
-          <div>
-            <img src="#" alt="#about" />
-            <p></p>
-            <a href=""></a><img src="" alt="" />
-          </div>
-        </section>
+        <div class="wrapper">
+          <h2 class="title">Projects</h2>
+          <section class="project">
+            <div class="">
+              <h3 class="project__title">Mixtape Magic</h3>
+              <ul class="project__languages">
+                <li>React</li>
+                <li>Nodejs</li>
+                <li>CSS</li>
+              </ul>
+              <p class="project__desc">
+                A web app for managing and showcasing user playlists. Built with
+                React (frontend), Supabase (database), authentication (JWT) and
+                hosted on Netlify and Render.
+              </p>
+              <a
+                href="https://github.com/ramseyediku/Mixtape-Magic"
+                target="_blank"
+                class="project__link"
+              >
+                Github
+              </a>
+              <a
+                href="mixtapemagic.netlify.app/"
+                target="_blank"
+                class="project__link"
+              >
+                Live Demo
+              </a>
+            </div>
+            <img
+              src="src/IMG/mixtape.png"
+              alt="Project preview for the Mixtape Magic project"
+            />
+          </section>
+          <section class="project">
+            <div class="">
+              <h3 class="project__title">CSS Archery Game</h3>
+              <ul class="project__languages">
+                <li>HTML</li>
+                <li>SCSS</li>
+              </ul>
+              <p class="project__desc">
+                A mini web game created that simulates and archery game using
+                only html, and scss.
+              </p>
+              <a
+                href="https://github.com/ramseyediku/css-archery-games"
+                target="_blank"
+                class="project__link"
+              >
+                Github
+              </a>
+              <a
+                href="https://codepen.io/ramseyediku/full/NPWePMY"
+                target="_blank"
+                class="project__link"
+              >
+                Live demo
+              </a>
+            </div>
+            <img
+              src="src/IMG/archery.png"
+              alt="Project preview for the CSS archery project"
+            />
+          </section>
+        </div>
+        <div class="watermark watermark--project">Projects</div>
       </section>
+
       <footer class="footer" id="contact" class="contact">
         <div class="watermark watermark--footer">Contact</div>
         <div class="wrapper">
@@ -107,7 +164,7 @@
 
       <dialog>
         <button autofocus><img src="src/IMG/close.svg" /></button>
-        <form class="form" action="#">
+        <form class="form" method="post" action="/">
           <h2 class="title">Get in touch</h2>
           <div class="form__group">
             <label for="name">Name</label>
@@ -124,10 +181,12 @@
               name="message"
               id="textarea"
               rows="10"
-            ></textarea>
+            >
+            </textarea>
           </div>
           <input class="button" type="submit" value="Send" />
         </form>
+        <div class="watermark watermark--dialog">Contact</div>
       </dialog>
     </main>
   </body>

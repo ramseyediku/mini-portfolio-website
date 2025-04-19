@@ -129,6 +129,8 @@ time[datetime*=":"] {
 :root {
   --clr-dark: hsl(0, 0%, 25%);
   --clr-light: hsl(0, 0%, 100%);
+  --clr-grey: hsla(0, 0%, 63%, 0.5);
+
   --clr-accent: hsl(0, 0%, 40%);
   --clr-accent-2: hsl(358, 62%, 48%);
 
