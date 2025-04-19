@@ -131,8 +131,13 @@ time[datetime*=":"] {
   --clr-light: hsl(0, 0%, 100%);
   --clr-accent: hsl(0, 0%, 40%);
   --clr-accent-2: hsl(358, 62%, 48%);
+
+  --border-radius: 3.75em;
 }
 
 body {
   color: var(--clr-accent);
+  &:has(dialog[open]) {
+    overflow: hidden;
+  }
 }

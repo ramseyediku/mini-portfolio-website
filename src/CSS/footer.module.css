@@ -52,3 +52,54 @@
     right: -2.5%;
   }
 }
+
+dialog {
+  border-top-right-radius: calc(var(--border-radius) / 2);
+  border-top-left-radius: calc(var(--border-radius) / 2);
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 0;
+  border: 0;
+
+  &::backdrop {
+    opacity: 0.9;
+    background-color: var(--clr-dark);
+  }
+
+  button {
+    background-color: var(--clr-light);
+    border: 0;
+    img {
+      width: 3em;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  .form {
+    width: 40%;
+    margin-inline: auto;
+
+    .form__group {
+      display: flex;
+      flex-direction: column;
+      margin-block: 1.5em;
+
+      label {
+        margin-bottom: 0.2em;
+      }
+    }
+
+    .form__input {
+      padding: 1.25em 1em;
+      border-radius: calc(var(--border-radius) / 4);
+      border: solid 2px hsla(0, 0%, 63%, 0.5);
+      font-family: "Questrial", sans-serif;
+
+      &:focus {
+        outline: solid 3px var(--clr-accent-2);
+        opacity: 0.6;
+      }
+    }
+  }
+}

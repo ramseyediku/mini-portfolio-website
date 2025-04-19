@@ -16,7 +16,7 @@
 
 .title {
   color: var(--clr-dark);
-  font-size: 3rem;
+  font-size: 6.75rem;
 }
 
 .link {
@@ -29,8 +29,8 @@
 
 .button {
   color: var(--clr-light);
-  padding: 0.75em 3.5em;
-  border-radius: 30px;
+  padding: 1em 3.75em;
+  border-radius: var(--border-radius);
   font-size: 1.2rem;
   background-color: var(--clr-accent-2);
   position: relative;

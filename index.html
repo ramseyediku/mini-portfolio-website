@@ -81,7 +81,7 @@
               Want to get <br />
               in contact?
             </h2>
-            <button class="button">Let's talk</button>
+            <button class="button button--form">Let's talk</button>
             <p class="footer__copy">Copyright © 2025 by Ramsey Ediku.</p>
           </div>
           <div class="hero__links">
@@ -104,6 +104,31 @@
           </div>
         </div>
       </footer>
+
+      <dialog>
+        <button autofocus><img src="src/IMG/close.svg" /></button>
+        <form class="form" action="#">
+          <h2 class="title">Get in touch</h2>
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input class="form__input" type="text" name="name" />
+          </div>
+          <div class="form__group">
+            <label for="name">E-mail</label>
+            <input class="form__input" type="email" name="email" />
+          </div>
+          <div class="form__group">
+            <label for="name">Message</label>
+            <textarea
+              class="form__input"
+              name="message"
+              id="textarea"
+              rows="10"
+            ></textarea>
+          </div>
+          <input class="button" type="submit" value="Send" />
+        </form>
+      </dialog>
     </main>
   </body>
 </html>
