@@ -28,6 +28,7 @@
 }
 
 .button {
+  display: inline-block;
   color: var(--clr-light);
   padding: 1em 3.75em;
   border-radius: var(--border-radius);

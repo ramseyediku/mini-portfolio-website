@@ -139,6 +139,7 @@ time[datetime*=":"] {
 
 body {
   color: var(--clr-accent);
+  font-size: 1.15rem;
   &:has(dialog[open]) {
     overflow: hidden;
   }
