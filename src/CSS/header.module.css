@@ -38,3 +38,9 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .header .header__nav ul a {
+    font-size: 1Srem;
+  }
+}

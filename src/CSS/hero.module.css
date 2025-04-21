@@ -24,7 +24,11 @@
 
   .hero__img {
     border-radius: 10px;
-    width: 40%;
+    width: max(40%, 400px);
+  }
+
+  .watermark--hero {
+    top: -10%;
   }
 }
 
@@ -50,6 +54,32 @@
         filter: invert(20%) sepia(100%) saturate(1979%) hue-rotate(340deg)
           brightness(94%) contrast(89%);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    flex-direction: column;
+
+    .hero__content {
+      order: -1;
+    }
+  }
+
+  .hero__links {
+    margin-block: 2em 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero__links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+
+    a img {
+      width: max(1em, 20px);
     }
   }
 }

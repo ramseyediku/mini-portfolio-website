@@ -12,6 +12,7 @@
   opacity: 0.025;
   font-weight: 900;
   user-select: none;
+  z-index: -1;
 }
 
 .title {
@@ -37,4 +38,28 @@
   width: fit-content;
   border: 0;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .button {
+    padding: 0.8em 3.5em;
+  }
+
+  .watermark {
+    font-size: 12rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    padding: 0.6em 3.2em;
+    width: max-content;
+  }
+  .title {
+    font-size: 4rem;
+  }
+
+  .watermark {
+    font-size: 8rem;
+  }
 }
