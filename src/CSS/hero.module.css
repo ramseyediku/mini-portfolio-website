@@ -4,13 +4,22 @@
   gap: 2em;
   justify-content: space-between;
 
-  & > div {
-    display: flex;
-    flex-direction: column;
+  .title {
+    margin: 0;
   }
 
-  .hero__title {
-    font-size: 4rem;
+  .button {
+    margin-top: 1em;
+  }
+
+  .hero__name {
+    margin-top: auto;
+    color: var(--clr-accent);
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
   }
 
   .hero__img {
@@ -23,7 +32,6 @@
   margin-top: auto;
   display: flex;
   gap: 3em;
-  justify-content: space-between;
 
   a {
     display: flex;

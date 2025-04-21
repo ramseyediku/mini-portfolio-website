@@ -15,7 +15,7 @@
 }
 
 .title {
-  color: var(--clr-accent);
+  color: var(--clr-dark);
   font-size: 6.75rem;
 }
 
@@ -32,7 +32,6 @@
   color: var(--clr-light);
   padding: 1em 3.75em;
   border-radius: var(--border-radius);
-  font-size: 1.2rem;
   background-color: var(--clr-accent-2);
   position: relative;
   width: fit-content;

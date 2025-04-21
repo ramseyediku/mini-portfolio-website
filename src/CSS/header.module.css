@@ -4,18 +4,20 @@
   justify-content: space-between;
 
   .header__logo {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
     position: relative;
+    color: var(--clr-accent);
+    font-family: "Questrial", sans-serif;
 
     &::after {
       content: "";
       position: absolute;
-      width: 0.25em;
+      width: 0.2em;
       aspect-ratio: 1/1;
       background-color: var(--clr-accent-2);
       border-radius: 50%;
-      top: 60%;
+      top: 50%;
     }
   }
 
@@ -25,6 +27,14 @@
 
     a {
       padding: 1em;
+      color: var(--clr-dark);
+      transition: color 350ms ease-in-out;
+      font-size: 1.1rem;
+
+      &:hover,
+      &:focus-within {
+        color: var(--clr-accent-2);
+      }
     }
   }
 }
