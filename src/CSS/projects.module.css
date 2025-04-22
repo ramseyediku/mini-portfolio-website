@@ -10,7 +10,7 @@
 .project {
   border-bottom: solid 1px var(--clr-grey);
   display: grid;
-  grid-template-columns: 8fr 2fr;
+  grid-template-columns: 7fr 3fr;
   padding-block: 2.5em;
 
   .project__title {
@@ -55,6 +55,7 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     cursor: pointer;
+    width: max(40%, 400px);
   }
 }
 
